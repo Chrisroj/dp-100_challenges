@@ -1,6 +1,6 @@
 # Create a function that we can re-use
 # Source: https://docs.microsoft.com/es-mx/learn/modules/explore-analyze-data-with-python/5-exercise-visualize-data
-def show_distribution(var_data):
+def show_distribution(var_data, variable_name = "Data"):
     from matplotlib import pyplot as plt
 
     # Get statistics
@@ -35,4 +35,4 @@ def show_distribution(var_data):
     ax[1].set_xlabel('Value')
 
     # Add a title to the Figure
-    fig.suptitle('Data Distribution')
+    fig.suptitle(f'{variable_name} Distribution')
